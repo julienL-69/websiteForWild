@@ -1,0 +1,229 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+
+body {
+  display: flex;
+  min-height: 100vh; /* la ligne qui permet de fair een sorte que les section occupent tous l'espace restant, mais pourquoi????*/
+  flex-flow: column;
+  margin: 0 px;
+}
+
+header {
+  display: flex;
+
+  height: 120px;
+  background-image: linear-gradient(white 0%, black 100%);
+}
+
+h2  {
+	 font-family: "Amatic SC"; 
+  font-size: 40px;
+}
+
+nav {
+  display: flex;
+  margin: auto;
+} 
+  
+
+.headerlien {
+  display: flex;
+  padding: 15px;
+  color: white;
+  font-family: "Amatic SC"; 
+  font-size: 30px;
+}
+
+.ulheader {
+  display: flex;
+  list-style: none;
+}
+
+.liheader {
+  display: flex;
+}
+
+#logo {
+  max-height: 100px;
+
+  margin-left: auto;
+  margin-right: auto;
+  border: 10px;
+  border-image: linear-gradient(white, black) 5;
+}
+
+#sectionCentrale {
+  display: flex;
+  flex-grow: 1;
+}
+
+#lesSections {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  background-color: black;
+}
+
+.divimage {
+  max-width: 20%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+
+.imagelaterale {
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  background-color: black;
+}
+
+/* on cache tous sauf performance, si on clic sur un lien on affichera en js la bonne section */
+
+#performance {
+	
+  position: absolute;
+  z-index: 0;
+  margin-right: 21%;
+  padding-left: 10px;
+  color: white;
+
+  background-color: black;
+}
+
+#Sectionperf {
+	list-style: none;
+	display:flex;
+}
+
+.paraperf{
+text-align:justify;
+margin:10px;
+
+}
+#paraperf2{
+	border-right: 1px solid white;
+	margin:10px;
+	padding-left:10px;
+border-left: 1px solid white;
+
+}
+
+.center{
+	text-align:center;
+	 font-family: "Amatic SC"; 
+	font-size: 20px;
+}
+
+#about {
+  position: absolute;
+  z-index: 1;
+  visibility: hidden;
+  color: white;
+  margin-right: 21%;
+  padding-left: 10px;
+}
+
+#price {
+  position: absolute;
+  z-index: 2;
+  visibility: hidden;
+  color: white;
+  margin-right: 21%;
+  padding-left: 10px;
+}
+
+#contact {
+  position: absolute;
+  z-index: 3;
+  visibility: hidden;
+  color: white;
+  margin-right: 21%;
+  padding-left: 10px;
+  
+}
+
+/* mis een forme table des prix et postion table dans la section price */
+table
+{
+	border-collapse:collapse;
+	margin: auto;
+	  
+}
+
+th, td {
+	width: 2%; /*ca amrche mais pourquoi???? */
+	text-align:center;
+	color: white;
+  font-family: "Amatic SC"; 
+  font-size: 18px;
+  border: 1px solid white;
+}
+
+#nobord{
+	border:none;
+}
+
+/* mise en forme de la section contact */
+userRequestform {
+	display:flex;
+	justify-content:space-around;
+
+}
+
+#usermailInfo {
+margin-left: 70px;
+margin-top: 20px;
+}
+
+
+#userRequestInfo{
+margin-left: 50px;
+margin-top: 20px;
+}
+
+#userrequest {
+line-height: 25px;
+}
+
+#lignemail, #lignetexte
+{
+
+	margin-left: 30px;
+	vertical-align: top;
+	margin-top: 20px;
+}
+
+#boutonenvoyer {
+	display:flex;
+justify-content:space-around;
+margin-top: 20px;
+
+}
+
+
+footer {
+	display:flex;
+	justify-content: space-around;
+	padding-top:20px;
+  height: 100px;
+  border-top:1px solid white;
+  background-image: linear-gradient(black 0%, white 100%);
+  color: white;
+  font-family: "Amatic SC"; 
+  font-size: 18px;
+}
+
+a{
+	color: white;
+  font-family: "Amatic SC"; 
+  font-size: 18px;
+}
+
+
+ 
+
+
